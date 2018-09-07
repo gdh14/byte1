@@ -45,20 +45,65 @@
 
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Yeah!!</h1>
-        <p>This is the Fusion Byte of the Data Pipeline class. This
-        page should explain what question you want to answer and use
-        the visualization tools provided by Google Fusion Table to
-        answer it. </p>
+	<h1>Top Graduate Schools of Electrical Engineering in the US</h1>
+        <p>This webpage is mainly focused on the the best graduate schools for Electrical Engineering. It is designed to answer
+        three questions. <br>
+        First, what is the geological distribution of these schools? Why does the distribution come in that way? <br>
+        Second, how do some characterstics of schools vary in different ranking schools of EE? <br>
+        Third, what quantitive requirements should
+        students meet to enter schools of EE with different ranking? </p>
       </div>
 
 
-<iframe width="500" height="300" scrolling="no" frameborder="no"
-	src="https://www.google.com/fusiontables/embedviz?q=select+col16%3E%3E0+from+1ymz3EtGdi4qKGMl5AxEFXtTlgk3tKi8iCpjTzvM&amp;viz=MAP&amp;h=false&amp;lat=38.071424981566125&amp;lng=-85.15232666015623&amp;t=1&amp;z=9&amp;l=col16%3E%3E0&amp;y=3&amp;tmplt=3&amp;hml=TWO_COL_LAT_LNG"></iframe>
+<br><br><br>
+<h3>Geological Distribution of Top 100 Graduate Schools of Electrical Engineering</h3>
+
+<br><br><br>
+<div align="center">
+	<iframe width="1000" height="600" scrolling="no" frameborder="no"
+		src="https://fusiontables.google.com/embedviz?q=select+col1+from+1M8Zd2eGxfybsPiEE-DzVqFpNHYMecg2U5Sl_spAj&amp;
+		viz=MAP&amp;h=false&amp;lat=36.56260003738545&amp;lng=-114.45314174999999&amp;
+		t=1&amp;z=4&amp;l=col1&amp;y=3&amp;tmplt=4&amp;hml=ONE_COL_LAT_LNG">
+	</iframe>
+</div>
+
+<br>
+<p style="font-size:150%">
+We can see from the first graph that best EE graduate schools are mainly located along the east and west coast, 
+as well as centered around metropolises like NYC, LA, San Francisco, Boston, etc. This distribution can be attributed 
+to the wealthiness of coastal area, therefore more budgets can be used on supporting education and reasearch.
+</p>
+
+
+<br><br><br><br><br>
+<h3>Trend of Characteristics as Ranking Varies</h3>
+
+<div align="center">
+<iframe width="800" height="600" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col4+from+1M8Zd2eGxfybsPiEE-DzVqFpNHYMecg2U5Sl_spAj+order+by+col0+asc&amp;viz=GVIZ&amp;t=AREA&amp;rmax=250&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_treatLabelsAsText=false&amp;gco_legacyScatterChartLabels=true&amp;gco_lineWidth=0&amp;gco_booleanRole=certainty&amp;gco_pointSize=7&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_legend=right&amp;gco_title=Research+Expenditure+of+Universities+with+Different+Rankings&amp;gco_backgroundColor=%7B%22fill%22%3A%22%23ffffff%22%7D&amp;gco_tooltip=%7B%22isHtml%22%3Atrue%7D&amp;tmplt=6&amp;att=true&amp;width=1000&amp;height=600"></iframe>
+</div>
+
+<p style="font-size:150%">
+Due to the limitation of the dataset, I only visualize one characteristic of the school --- research expenditure.
+We can see from the chart that as ranking grows (which means the school is getting worse), the research expenditure drops. 
+It indicates that in higher ranking schools, more research expenditure are spent on solving problems in EE-related field.
+</p>
+
+<br><br><br><br><br>
+<h3>Requirements to Meet for High-Ranking Schools</h3>
+
+<div align="center">
+<iframe width="800" height="500" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?containerId=googft-gviz-canvas&amp;q=select+col0%2C+col5+from+1M8Zd2eGxfybsPiEE-DzVqFpNHYMecg2U5Sl_spAj+order+by+col0+asc&amp;viz=GVIZ&amp;t=SCATTER&amp;rmax=250&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;gco_useFirstColumnAsDomain=true&amp;gco_treatLabelsAsText=false&amp;gco_legacyScatterChartLabels=true&amp;gco_lineWidth=0&amp;gco_booleanRole=certainty&amp;gco_pointSize=7&amp;gco_hAxis=%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22title%22%3A%22University+Ranking%22%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A12%2C+%22italic%22%3Afalse%7D%7D&amp;gco_vAxes=%5B%7B%22useFormatFromData%22%3Afalse%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%2C+%22title%22%3A%22GRE-Q%22%2C+%22titleTextStyle%22%3A%7B%22color%22%3A%22%23222%22%2C+%22fontSize%22%3A12%2C+%22italic%22%3Afalse%7D%2C+%22gridlines%22%3A%7B%22count%22%3A%225%22%7D%2C+%22logScale%22%3Afalse%2C+%22formatOptions%22%3A%7B%22source%22%3A%22inline%22%7D%2C+%22format%22%3A%220.%23%23%22%7D%2C%7B%22useFormatFromData%22%3Atrue%2C+%22viewWindow%22%3A%7B%22max%22%3Anull%2C+%22min%22%3Anull%7D%2C+%22minValue%22%3Anull%2C+%22maxValue%22%3Anull%7D%5D&amp;gco_legend=right&amp;gco_title=Average+GRE-Q+Score+for+Entering+Universities+with+Different+Rankings&amp;gco_series=%7B%220%22%3A%7B%22color%22%3A%22%23cc4125%22%2C+%22pointSize%22%3A4%7D%7D&amp;gco_trendlines=%7B%220%22%3A%7B%22type%22%3A%22linear%22%2C+%22pointSize%22%3A0%2C+%22visibleInLegend%22%3Afalse%2C+%22lineWidth%22%3A4%2C+%22opacity%22%3A0.4%2C+%22labelInLegend%22%3Anull%2C+%22showR2%22%3Afalse%2C+%22degree%22%3A2%7D%7D&amp;gco_tooltip=%7B%22isHtml%22%3Atrue%7D&amp;tmplt=7&amp;width=800&amp;height=500"></iframe>
+</div>
+
+<p style="font-size:150%">
+Due to the limitation of the dataset, I pick up one standard criteria --- GRE quantitive score. It can be concluded that
+the requirement for GRE-Q score commonly increases as the ranking of school grows higher. For a student targeting top 30 
+schools of EE, he should normally gets 759 or higher according to the linear estimation.
+</p>
+
 
       </div> <!-- /page-header -->
     </div> <!-- /container -->
-
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -66,5 +111,10 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
+
+
+
+    
+    
   </body>
 </html>
